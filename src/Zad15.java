@@ -15,10 +15,7 @@ public class Zad15 {
             boolean find = false;
 
             for (Number number : numbers) {
-                if (number != null && number.getValue() == value) {
-                    number.setIloscWystapien(number.getIloscWystapien() + 1);
-                    find = true;
-                }
+                find = isFind(value, number);
 
             }
             if (!find) {
@@ -28,6 +25,15 @@ public class Zad15 {
         }
 
         return numbers;
+    }
+
+    private boolean isFind(int value, Number number) {
+        boolean find = false;
+        if (number != null && number.getValue() == value) {
+            number.setIloscWystapien(number.getIloscWystapien() + 1);
+            find = true;
+        }
+        return find;
     }
 
     public void printNumbers(Number[] numbers) {
