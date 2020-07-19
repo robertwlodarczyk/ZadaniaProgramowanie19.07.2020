@@ -1,3 +1,8 @@
+package Zadanie15;
+
+import Zadanie15.Number;
+import Zadanie15.Zad15;
+
 public class Main {
 
     public static void main(String[] args) {
