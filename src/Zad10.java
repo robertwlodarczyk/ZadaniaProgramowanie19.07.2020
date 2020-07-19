@@ -9,23 +9,18 @@ public class Zad10 {
         System.out.println("Podaj liczbę dodatnią: ");
 
         int number = scanner.nextInt();
-        int number1 = 0;
-        int number2 = 0;
-        int i = 10;
+        int signno = String.valueOf(number).length();
 
-        if (number < 10) {
-            System.out.println(number);
-        } else {
+        int sum = 0;
 
-            do {
-                number1 = number / i;
-                number2 = number % 10;
-                i *= 10;
+        for (int i = 1; i <= signno; i++) {
+            sum += number % 10;
+            number = number / 10;
 
 
-            } while (number1 > 0);
         }
-        System.out.println(number1 + number2);
+
+        System.out.println(sum);
 
 
     }
