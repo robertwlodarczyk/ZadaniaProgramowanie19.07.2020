@@ -1,3 +1,5 @@
+package Zadanie13;
+
 import java.util.Scanner;
 
 public class Zad13 {
