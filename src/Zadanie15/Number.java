@@ -1,3 +1,5 @@
+package Zadanie15;
+
 public class Number { // do zadania 15
 
     private int value;
